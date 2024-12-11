@@ -1,0 +1,7 @@
+num=int(input("Enter number:"))
+r=int(input("Enter range:"))
+for i in range(1,num+1):
+    print("\n")
+    for j in range(1,r+1):
+        ans=i*j
+        print(i,"*",j,"=",ans)

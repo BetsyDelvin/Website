@@ -1,0 +1,94 @@
+/* styles.css */
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    min-height: 100vh; /* Ensure body fills viewport height */
+    position: relative; /* Needed for footer positioning */
+}
+
+/* Header styles */
+header {
+    background-color: #000000; /* Black background */
+    color: #ffd700; /* Yellow text */
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    height: 200px; /* Adjust as needed */
+    margin-right: 20px; /* Adjust as needed */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffd700; /* Yellow text */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main section styles */
+main {
+    padding: 20px;
+    padding-bottom: 60px; /* Adjust padding to create space for the footer */
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #ffd700;
+    font-size: 1.8em;
+    border-bottom: 1px solid #c0ab34; /* White border */
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #d8f405b1;
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

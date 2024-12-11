@@ -1,0 +1,20 @@
+num=int(input("enter the number:"))
+print("Enter the operation.")
+operation=input("Enter 'A' for addition\n Enter 'S' for Subtraction\n Enter 'M' for multiplication\n Enter 'D' for division\n ").upper()
+r=int(input("Enter range:"))
+if operation=='A' or 'S' or 'M' or 'D':
+    for i in range(1,r+1):
+        if operation=='A':
+            n=num+i
+            print(str(num)+"+"+str(i)+"="+str(n))
+        elif operation=='S':
+            n=num-i
+            print(str(num)+"-"+str(i)+"="+str(n))
+        elif operation=='M':
+            n=num*i
+            print(str(num)+"*"+str(i)+"="+str(n))
+        elif operation=='D':
+            n=num/i
+            print(str(num)+"/"+str(i)+"="+str(n))
+else:
+            print("Error... Check ur input.")

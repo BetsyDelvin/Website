@@ -1,0 +1,5 @@
+num=int(input("Enter number:"))
+r=int(input("Enter range:"))
+for i in range(1,r+1):
+    ans=num*i
+    print(num,"*",i,"=",ans)

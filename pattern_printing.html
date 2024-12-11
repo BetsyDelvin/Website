@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View_Code-Pattern_Printing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        pre {
+            white-space: pre-wrap;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Pattern Printing.</h1>
+        <h3>Code</h3>
+        <a href="pp1.txt" target="_blank">Download pp1.txt</a>
+        <pre id="pp1"></pre>
+        <p>Output:<br>*<br>**<br>***<br>goes on till given range.</p>
+    </div>
+    <div>
+        <h3>Code</h3>
+        <a href="Python/pp2.txt" target="_blank">Download pp2.txt</a>
+        <pre id="pp2"></pre>
+        <p>Output:<br>&nbsp;&nbsp;&nbsp;*<br>&nbsp;&nbsp;***<br>&nbsp;*****<br>goes on till given range.</p>
+    </div>
+    <div>
+        <h3>Code</h3>
+        <a href="Python/pp3.txt" target="_blank">pp3.txt</a>
+        <pre id="pp3"></pre>
+        <p>Output:<br>&nbsp;&nbsp;&nbsp;*<br>&nbsp;&nbsp;**<br>&nbsp;***<br>goes on till given range.</p>
+    </div>
+    <hr>
+    <div id="codeContainer"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const files = [
+                { path: 'Python/pp1.txt', elementId: 'pp1' },
+                { path: 'Python/pp2.txt', elementId: 'pp2' },
+                { path: 'Python/pp3.txt', elementId: 'pp3' }
+            ];
+
+            files.forEach(file => {
+                fetch(file.path)
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById(file.elementId).textContent = data;
+                    })
+                    .catch(error => console.error('Error fetching file:', error));
+            });
+        });
+    </script>
+</body>
+</html>

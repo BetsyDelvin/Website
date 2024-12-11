@@ -1,0 +1,43 @@
+def Code_Snippet_1():
+    #Number is a palindrome or not:
+    orig_string=str(int(input("Enter the number:")))
+    rev_string=orig_string[::-1]
+    if rev_string==orig_string:
+        print("Palindrome")
+    else:
+        print("Not a palindrome.")
+        
+def Code_Snippet_2():
+    #String is a palindrome or not:
+    orig_string=input("Enter the string:").upper()
+    rev_string=orig_string[::-1]
+    if rev_string==orig_string:
+        print("string is a palindrome")
+    else:
+        print("Not a palindrome.")
+
+def Code_Snippet_3():
+    #String is a palindrome or not [Without using [::-1]]:
+    orig_string=input("Enter the string:").upper()
+    list_str=list(orig_string)
+    l=len(orig_string)
+    list1=[]
+    index=l-1
+    ex=list_str[index]
+    list1.append(ex)
+    for i in range(l-1):
+        ex=list_str[index-1]
+        list1.append(ex)
+        index=index-1
+    orig_string = ''.join(list_str)
+    rev_string=''.join(list1)
+    if orig_string==rev_string:
+        print("Palindrome.")
+    else:
+        print("Not a Palindrome.")
+
+
+        
+Code_Snippet_1()
+Code_Snippet_2()
+Code_Snippet_3()

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background: url('Python/python-design-patterns.png') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Overlay with opacity */
+            z-index: -1;
+        }
+
+        header, main, footer {
+            position: relative;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1, h3 {
+            margin: 0 0 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #0ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <h1>Python</h1>
+    </header>
+    <main>
+        <section>
+            <h3>Programs</h3>
+            <ul>
+                <li><a href="numbers.html" target="_blank">Numbers</a></li>
+                <li><a href="even_numbers.html" target="_blank">Even Numbers</a></li>
+                <li><a href="odd_numbers.html" target="_blank">Odd Numbers</a></li>
+                <li><a href="vowels.html" target="_blank">vowels</a></li>
+                <li><a href="pattern_printing.html" target="_blank">pattern_printing</a></li>
+                <li><a href="python/armstrong_number.py" target="_blank">Armstrong Number</a></li>
+                <li><a href="palindrome.html" target="_blank">Palindrome</a></li>
+                <li><a href="tables.html" target="_blank">Tables</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Data Pirates. All rights reserved.</p>
+    </footer>
+</body>
+</html>

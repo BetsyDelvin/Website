@@ -1,0 +1,6 @@
+r=int(input("Enter range:"))
+pattern="*"
+print(pattern)
+for i in range(1,r):
+    pattern=pattern+"*"
+    print(pattern)
